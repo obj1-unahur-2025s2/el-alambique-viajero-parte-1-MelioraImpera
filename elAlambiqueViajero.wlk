@@ -75,3 +75,17 @@ object lasVegas {
         ciudadConmemorada.condicion(unAuto)
     }
 }
+
+object superChatarraEspecial {
+    var tieneCaniones = true
+
+    method agregarCaniones() {tieneCaniones = true}
+    method sacarCaniones() {tieneCaniones = false}
+    method combustible() {
+        if (tieneCaniones) {
+            return 200
+        } else {
+            return 100
+        }
+    }
+}
